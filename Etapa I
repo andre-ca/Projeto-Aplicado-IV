@@ -1,0 +1,72 @@
+# Análise de Séries Temporais da Poluição Atmosférica no Estado de São Paulo
+
+## Introdução
+
+A poluição atmosférica é um dos principais desafios ambientais enfrentados por grandes centros urbanos ao redor do mundo. Esse fenômeno é causado pela emissão de poluentes oriundos de atividades industriais, transporte, queimadas e processos naturais, podendo resultar em sérios impactos na saúde humana e no meio ambiente.
+
+No Brasil, e especificamente no estado de São Paulo, a qualidade do ar é uma preocupação constante devido à alta concentração populacional, à frota veicular extensa e às atividades industriais que contribuem significativamente para a liberação de substâncias nocivas na atmosfera.
+
+A poluição atmosférica está diretamente relacionada a problemas de saúde pública, como doenças respiratórias e cardiovasculares, além de impactar o meio ambiente e o clima. A compreensão dos padrões temporais dos poluentes é fundamental para subsidiar estratégias de controle e mitigação da poluição.
+
+Dentre os principais poluentes atmosféricos monitorados, destacam-se:
+- **Material particulado** (MP10 e MP2,5)
+- **Dióxido de enxofre** (SO₂)
+- **Monóxido de carbono** (CO)
+- **Dióxido de nitrogênio** (NO₂)
+- **Ozônio** (O₃)
+
+Esses poluentes podem causar diversos problemas de saúde, incluindo doenças respiratórias e cardiovasculares, além de impactarem ecossistemas e contribuírem para mudanças climáticas globais.
+
+A análise de séries temporais se apresenta como uma ferramenta essencial para compreender o comportamento dos poluentes atmosféricos ao longo do tempo e identificar padrões que possam auxiliar na formulação de políticas públicas voltadas para a melhoria da qualidade do ar.
+
+## Descrição da Base de Dados
+
+Os dados analisados compreendem medições das concentrações de poluentes em diversas localidades do estado de São Paulo, abrangendo o período de **2015 a 2021**. O conjunto de dados possui **mais de 10 milhões de registros**, distribuídos entre **87 estações de medição** e contempla 9 tipos de poluentes:
+
+- **MP10**, **O₃**, **NO₂**, **MP2.5**, **CO**, **SO₂**, **NO**, **FMC** e **PTS**.
+
+### Estrutura do Dataset:
+
+| Campo    | Descrição |
+|----------|-----------|
+| **ID** | Identificação única do registro |
+| **Data** | Data da medição |
+| **Hora** | Horário da medição |
+| **Estação** | Local da medição |
+| **Código** | Código da estação |
+| **Poluente** | Tipo de poluente medido |
+| **Valor** | Concentração do poluente |
+| **Unidade** | Unidade de medida |
+| **Tipo** | Forma da medição (manual ou automática) |
+
+## Referencial Teórico
+
+### Poluição Atmosférica e Seus Impactos
+
+A poluição atmosférica é um problema ambiental global, resultante da emissão de substâncias químicas na atmosfera por atividades industriais, veículos automotores, queimadas e processos naturais. Os poluentes atmosféricos podem ser classificados como:
+- **Primários**: emitidos diretamente de uma fonte.
+- **Secundários**: formados por reações químicas no ar.
+
+Estudos demonstram que a exposição prolongada à poluição atmosférica pode levar ao desenvolvimento de **doenças respiratórias, cardiovasculares e até mesmo neurológicas**.
+
+No Brasil, a **Companhia Ambiental do Estado de São Paulo (CETESB)** realiza o monitoramento contínuo da qualidade do ar e publica relatórios anuais sobre os níveis de poluentes.
+
+### Séries Temporais e Análise de Dados Ambientais
+
+Séries temporais são sequências de observações coletadas ao longo do tempo em intervalos regulares. A análise de séries temporais permite modelar a evolução de fenômenos, identificando:
+- **Tendências**
+- **Padrões sazonais**
+- **Variações cíclicas**
+
+Métodos populares para análise de séries temporais incluem:
+- **Suavização exponencial**
+- **Modelos autoregressivos integrados de médias móveis (ARIMA)**
+- **Decomposição de séries temporais**
+
+## Referências Bibliográficas
+
+- **BRAGA, A. L. F.; PEREIRA, L. A. A.; SALDIVA, P. H. N.** Poluição atmosférica e saúde pública. *Jornal de Pneumologia*, v. 27, n. 1, p. 10-15, 2001.
+- **CETESB - Companhia Ambiental do Estado de São Paulo.** Relatório de Qualidade do Ar no Estado de São Paulo. São Paulo: CETESB, 2022. Disponível em: [CETESB](https://cetesb.sp.gov.br). Acesso em: 27 fev. 2025.
+- **HYNDMAN, R. J.; ATHANASOPOULOS, G.** *Forecasting: Principles and Practice*. 3ª ed. OTexts, 2021. Disponível em: [OTexts](https://otexts.com/fpp3/).
+- **SHUMWAY, R. H.; STOFFER, D. S.** *Time Series Analysis and Its Applications*. 4ª ed. Springer, 2017.
+
